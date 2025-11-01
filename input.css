@@ -1,0 +1,80 @@
+@import "tailwindcss";
+/* pnpm dlx @tailwindcss/cli -i ./rose/input.css -o ./rose/style.css --watch */
+@layer base {
+  /* Petals */
+  .petal {
+    width: 50px;
+    height: 50px;
+    background: #fe7696;
+    border-radius: 0 50%;
+    position: absolute;
+    box-shadow: 0 0 10px #d1123f;
+    transform-origin: bottom right;
+    animation: open2 10s infinite;
+    z-index: 2;
+  }
+
+  .petal:nth-child(2) {
+    transform: rotate(90deg);
+    left: -10px;
+    animation: open1 10s infinite;
+  }
+
+  .petal:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: -15px;
+    background: #f03a64;
+    z-index: 1;
+    animation: open2 10s infinite;
+  }
+
+  .petal:nth-child(4) {
+    transform: rotate(90deg);
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: -15px;
+    background: #f03a64;
+    z-index: 1;
+    animation: open1 10s infinite;
+  }
+
+  .petal:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    left: 20px;
+    top: -25px;
+    z-index: 0;
+    background: #d1123f;
+    animation: open3 10s infinite;
+  }
+
+  /* Animations */
+  @keyframes open1 {
+    50% {
+      transform: rotate(100deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+  @keyframes open2 {
+    50% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes open3 {
+    50% {
+      transform: translateY(6px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

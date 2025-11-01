@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Beautiful Rose</title>
+    <!-- Improve connection time -->
+    <link rel="preconnect" href="https://fonts.font.im" crossorigin />
+    <!-- Preload the font stylesheet -->
+    <link rel="preload" as="style" href="https://fonts.font.im/css?family=Sacramento" />
+    <!-- Apply font immediately -->
+    <link href="https://fonts.font.im/css?family=Sacramento" rel="stylesheet" />
+  </head>
+
+  <body
+    class="bg-pink-200 flex items-center justify-center min-h-screen p-4 font-[Sacramento,cursive]"
+  >
+    <div class="flex max-md:flex-col-reverse justify-center items-center">
+      <h1 class="text-rose-600 text-4xl md:text-6xl mt-6 px-4 max-md:text-center leading-snug tracking-wide">
+        Your smile blooms in my heart like a rose kissed by morning light — soft, breathtaking, and
+        full of magic. When you smile, even the roses pause… just to admire your beauty.
+      </h1>
+      <div class="flex justify-center items-center scale-105 sm:scale-110 md:scale-125 md:mx-5">
+        <div class="relative w-60 aspect-square">
+          <!-- petals -->
+          <div class="absolute top-7 left-20">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+          </div>
+
+          <!-- leaf + stem -->
+          <div class="leaf absolute top-34 left-1">
+            <!-- Stem -->
+            <div
+              class="w-50 h-8 border-6 border-transparent border-t-green-700 rounded-[50%] rotate-100"
+            ></div>
+            <!-- Leaf top -->
+            <div class="w-12 h-10 rounded-[0_50%] bg-green-700 absolute -top-5 left-[61.5px]"></div>
+            <!-- Leaf bottom -->
+            <div
+              class="w-12 h-10 rounded-[0_50%] bg-green-700 absolute top-7 left-[113px] rotate-120"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
