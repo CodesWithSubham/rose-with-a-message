@@ -1,5 +1,5 @@
 @import "tailwindcss";
-/* pnpm dlx @tailwindcss/cli -i ./rose/input.css -o ./rose/style.css --watch */
+/* pnpm dlx @tailwindcss/cli -i ./input.css -o ./src/style.css --watch */
 @layer base {
   /* Petals */
   .petal {
