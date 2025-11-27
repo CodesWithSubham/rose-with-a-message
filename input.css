@@ -1,5 +1,5 @@
 @import "tailwindcss";
-/* pnpm dlx @tailwindcss/cli -i ./input.css -o ./docs/style.css --watch */
+
 @layer base {
   /* Petals */
   .petal {
